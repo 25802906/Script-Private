@@ -22,7 +22,7 @@ local RayfieldLibrary = {
             TextColor = Color3.fromRGB(240, 240, 240),
 
             Background = Color3.fromRGB(25, 25, 25), -- This will be overridden by BackgroundImage if provided
-            BackgroundImage = "rbxassetid://1234567890", -- Replace with your image asset ID
+            BackgroundImage = "rbxassetid://12583240950", -- Replace with your image asset ID
             Topbar = Color3.fromRGB(34, 34, 34),
             Shadow = Color3.fromRGB(20, 20, 20),
 
