@@ -22,7 +22,7 @@ local RayfieldLibrary = {
             TextColor = Color3.fromRGB(240, 240, 240),
 
             Background = Color3.fromRGB(25, 25, 25), -- This will be overridden by BackgroundImage if provided
-            BackgroundImage = "rbxassetid://1234567890", -- Replace with your image asset ID
+            BackgroundImage = "rbxassetid://13150663682", -- Replace with your image asset ID
             Topbar = Color3.fromRGB(34, 34, 34),
             Shadow = Color3.fromRGB(20, 20, 20),
 
@@ -62,7 +62,7 @@ local RayfieldLibrary = {
             TextColor = Color3.fromRGB(50, 50, 50),
 
             Background = Color3.fromRGB(255, 255, 255),
-            BackgroundImage = "rbxassetid://1234567890", -- Replace with your image asset ID
+            BackgroundImage = "rbxassetid://13150663682", -- Replace with your image asset ID
             Topbar = Color3.fromRGB(217, 217, 217),
             Shadow = Color3.fromRGB(223, 223, 223),
 
@@ -109,7 +109,7 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
-local Rayfield = game:GetObjects("rbxassetid://10804731440")[1]
+local Rayfield = game:GetObjects("rbxassetid://13150663682")[1]
 
 Rayfield.Enabled = false
 
