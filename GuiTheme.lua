@@ -18,11 +18,11 @@ local RayfieldLibrary = {
     Flags = {},
     Theme = {
         Default = {
-            TextFont = "Default", -- Default will use the various font faces used across Rayfield
+            TextFont = "Default", 
             TextColor = Color3.fromRGB(240, 240, 240),
 
-            Background = Color3.fromRGB(25, 25, 25), -- This will be overridden by BackgroundImage if provided
-            BackgroundImage = "rbxassetid://13150663682", -- Replace with your image asset ID
+            Background = Color3.fromRGB(25, 25, 25), 
+            BackgroundImage = "rbxassetid://13150663682", -- asset ID
             Topbar = Color3.fromRGB(34, 34, 34),
             Shadow = Color3.fromRGB(20, 20, 20),
 
@@ -37,9 +37,9 @@ local RayfieldLibrary = {
 
             ElementBackground = Color3.fromRGB(35, 35, 35),
             ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
-            SecondaryElementBackground = Color3.fromRGB(25, 25, 25), -- For labels and paragraphs
+            SecondaryElementBackground = Color3.fromRGB(25, 25, 25), 
             ElementStroke = Color3.fromRGB(50, 50, 50),
-            SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
+            SecondaryElementStroke = Color3.fromRGB(40, 40, 40), 
 
             SliderBackground = Color3.fromRGB(43, 105, 159),
             SliderProgress = Color3.fromRGB(43, 105, 159),
@@ -58,11 +58,11 @@ local RayfieldLibrary = {
             PlaceholderColor = Color3.fromRGB(178, 178, 178)
         },
         Light = {
-            TextFont = "Gotham", -- Default will use the various font faces used across Rayfield
+            TextFont = "Gotham", 
             TextColor = Color3.fromRGB(50, 50, 50),
 
             Background = Color3.fromRGB(255, 255, 255),
-            BackgroundImage = "rbxassetid://13150663682", -- Replace with your image asset ID
+            BackgroundImage = "rbxassetid://13150663682", -- asset ID
             Topbar = Color3.fromRGB(217, 217, 217),
             Shadow = Color3.fromRGB(223, 223, 223),
 
@@ -77,9 +77,9 @@ local RayfieldLibrary = {
 
             ElementBackground = Color3.fromRGB(198, 198, 198),
             ElementBackgroundHover = Color3.fromRGB(230, 230, 230),
-            SecondaryElementBackground = Color3.fromRGB(136, 136, 136), -- For labels and paragraphs
+            SecondaryElementBackground = Color3.fromRGB(136, 136, 136), 
             ElementStroke = Color3.fromRGB(180, 199, 97),
-            SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
+            SecondaryElementStroke = Color3.fromRGB(40, 40, 40), 
 
             SliderBackground = Color3.fromRGB(31, 159, 71),
             SliderProgress = Color3.fromRGB(31, 159, 71),
