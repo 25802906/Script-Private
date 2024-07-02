@@ -109,6 +109,76 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
+local Rayfield = game:GetObjects("rbxassetid://10804731440")[1]
+
+Rayfield.Enabled = false
+
+if gethui then
+    Rayfield.Parent = gethui()
+elseif syn.protect_gui then 
+    syn.protect_gui(Rayfield)
+    Rayfield.Parent = CoreGui
+elseif CoreGui:FindFirstChild("RobloxGui") then
+    Rayfield.Parent = CoreGui:FindFirstChild("RobloxGui")
+else
+    Rayfield.Parent = CoreGui
+end
+
+if gethui then
+    for _, Interface in ipairs(gethui():GetChildren()) do
+        if Interface.Name == Rayfield.Name and Interface ~= Rayfield then
+            Interface.Enabled = false
+            Interface.Name = "Rayfield-Old"
+        end
+    end
+else
+    for _, Interface in ipairs(CoreGui:GetChildren()) do
+        if Interface.Name == Rayfield.Name and Interface ~= Rayfield then
+            Interface.Enabled = false
+            Interface.Name = "Rayfield-Old"
+        end
+    end
+end
+
+-- Object Variables
+local Camera = workspace.CurrentCamera
+local Main = Rayfield.Main
+local Topbar = Main.Topbar
+local Elements = Main.Elements
+local LoadingFrame = Main.LoadingFrame
+local TabList = Main.TabList
+
+Rayfield.DisplayOrder = 100
+LoadingFrame.Version.Text = Release
+
+-- Adding Background Image
+local BackgroundImage = Instance.new("ImageLabel")
+BackgroundImage.Size = UDim2.new(1, 0, 1, 0)
+BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
+BackgroundImage.Image = RayfieldLibrary.Theme.Default.BackgroundImage
+BackgroundImage.Parent = Main
+BackgroundImage.ZIndex = -1
+BackgroundImage.BackgroundTransparency = 1
+
+-- Apply Theme Settings
+local function applyTheme(theme)
+    Main.BackgroundColor3 = theme.Background
+    BackgroundImage.Image = theme.BackgroundImage
+    Topbar.BackgroundColor3 = theme.Topbar
+    -- Apply other theme settings...
+end
+
+applyTheme(RayfieldLibrary.Theme.Default)
+
+-- Services
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local HttpService = game:GetService("HttpService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+
+-- Interface Management
 local Rayfield = game:GetObjects("rbxassetid://12583240950")[1]
 
 Rayfield.Enabled = false
